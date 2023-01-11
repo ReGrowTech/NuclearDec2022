@@ -5,11 +5,11 @@ public class Array_Special
 		int arr[]={145,154,168};
 		for(int each:arr)
 		{
-			int n=each;
-			int fact=1;
+			int n=each;			
 			int sum=0;
 			while(n>0)
 			{
+				int fact=1;
 				int ld=n%10;
 				for(int i=1;i<=ld;i++)
 				{
