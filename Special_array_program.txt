@@ -1,0 +1,25 @@
+public class Array_Special
+{
+	public static void main(String args[])
+	{
+		int arr[]={145,154,168};
+		for(int each:arr)
+		{
+			int n=each;
+			int fact=1;
+			int sum=0;
+			while(n>0)
+			{
+				int ld=n%10;
+				for(int i=1;i<=ld;i++)
+				{
+					fact*=i;
+				}
+				sum+=fact;
+				n/=10;
+			}
+			if(sum==each)
+				System.out.println(each);
+		}
+	}
+}			
