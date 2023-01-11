@@ -1,0 +1,25 @@
+public class Pattern_Trick {
+
+	public static void main(String[] args)
+	{
+		int n=5;
+		for(int i=1;i<=n;i++)
+		{
+			for(int j=1;j<=(n-i);j++)
+			{
+				System.out.print(" ");
+			}
+			int c=(int)Math.pow(11, (i-1));
+			while(c>0)
+			{
+				int ld=c%10;
+				c/=10;
+				System.out.print(ld+" ");
+			}
+			System.out.println();
+		}
+		
+
+	}
+
+}
