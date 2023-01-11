@@ -20,7 +20,7 @@ sum=sum+fact;
 }
 if(arr[i]==sum)
 {
-System.out.println("Armstrong Number: "+arr[i]);
+System.out.println("Special Number: "+arr[i]);
 }
 }
 }
