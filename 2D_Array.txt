@@ -1,0 +1,48 @@
+WAP TO CHECK A NUMBER IS PRESENT IN 2D ARRAY
+
+package Array2D;
+
+import java.util.Scanner;
+public class findNumber 
+{
+	
+		public static void main(String [] args)
+		{
+			
+			boolean flag=false;
+			
+			Scanner sc = new Scanner (System.in);
+			int a[][]= new int[3][2];
+			for(int i=0;i<a.length;i++)
+			{
+				for(int j=0;j<a[0].length;j++)
+				{
+				System.out.println("Enter Array element");
+				a[i][j]= sc.nextInt();
+				}
+			}
+				
+			System.out.println("Enter a number to check");
+			int num =sc.nextInt();
+			
+			for(int i=0;i<a.length;i++)
+			{
+				for(int j=0;j<a[0].length;j++)
+				{
+				if(a[i][j]==num)
+				{
+				flag=true;
+				System.out.println("Number found");
+				break;
+				}
+				}
+			}
+				
+			if(flag==false)
+			{
+				System.out.println("Number not found");
+			}	
+		}
+	}
+
+
