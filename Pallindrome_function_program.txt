@@ -1,0 +1,34 @@
+public class Palindrome_Func 
+{
+	public static int reverseNumber(int n)
+	{
+		int rev=0;
+		while(n>0)
+		{
+			int ld=n%10;
+			rev=rev*10+ld;
+			n/=10;
+		}
+		return rev;
+	}
+	public static void display(int num,int result)
+	{
+		if(num==result)
+			System.out.println("Palindrome : "+num);
+		else
+			System.out.println("Not palindrome : "+num);
+	}
+
+	public static void main(String[] args)
+	{
+		int a=25052;
+		int res=Palindrome_Func.reverseNumber(a);
+		Palindrome_Func.display(a, res);
+		
+
+	}
+
+}
+
+Output:
+Palindrome : 25052
