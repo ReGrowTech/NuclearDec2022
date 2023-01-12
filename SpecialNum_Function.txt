@@ -1,0 +1,65 @@
+package Function;
+
+import java.util.Scanner;
+
+public class SpecialNumber 
+{
+public static void main(String args[])
+{
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter a number to check for Special number");
+	int num=sc.nextInt();
+	int number=num;
+	int s=0;
+	
+	
+		while(num>0)
+		{
+		int lastdigit= SpecialNumber.lastDigit(num);
+		int fact_ld	= SpecialNumber.factorial(lastdigit);
+		int sum_of_fact	= SpecialNumber.sum_of_fact(fact_ld,s);
+		s=sum_of_fact;
+		num=num/10;
+		}
+		
+		int sum_of_fact=s;
+		SpecialNumber.display(sum_of_fact,number);
+}
+
+public static int lastDigit(int n)
+{
+
+	int ld=n%10;
+	return ld;
+}
+
+public static int factorial(int ld)
+{
+	int fact=1;
+	for(int i=1;i<=ld;i++)
+	{
+		fact=fact*i;
+	}
+	
+	return fact;
+}
+
+public static int sum_of_fact(int  facto, int sum)
+{
+	sum=sum+facto;	
+	return sum;
+}
+
+public static void display(int answer, int n)
+{
+	if(answer==n)
+	{
+		System.out.println(n+" is a Special number");
+	}
+	else
+	{
+		System.out.println(n+" is not a special number");
+	}
+}
+
+}
