@@ -1,0 +1,39 @@
+WAP to print those element of array which is repeating 2 or more than 2 times using function
+Input-{"AA","BB","AA","DD","CC","DD","CC"}
+Output-AA
+       DD
+       CC
+
+public class FrequncyOfArray 
+{
+	public static void countFreq(String arr[])
+	{
+		String fake="fake";
+		int c;
+		for(int i=0;i<arr.length;i++)
+		{
+			c=1;
+			if(arr[i]!=fake)
+			{
+				for(int j=i+1;j<arr.length;j++)
+				{
+					if(arr[i]==arr[j])
+					{
+						c++;
+						arr[j]="fake";
+					}
+				}
+			}
+			if(c>=2)
+				System.out.println(arr[i]);
+		}
+		
+	}
+
+	public static void main(String[] args)
+	{
+		String a[]= {"AA","BB","AA","DD","CC","DD","CC"};
+		FrequncyOfArray.countFreq(a);
+	}
+
+}
