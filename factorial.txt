@@ -1,0 +1,20 @@
+public class Factorial   
+{
+public static void main (String[]args)
+{
+    int n=425;
+   while (n>0)
+   {
+     int ld=n%10;
+     n=n/10;
+     int fact=1;
+     int i=1;
+      while(i<=ld)
+      {
+       fact=fact*i;
+          i++;
+        }
+     System.out.println("factorial of"+ld+"="+fact);
+     }
+   }
+  }
