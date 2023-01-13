@@ -1,0 +1,32 @@
+public class RotateArrayElementsToLeftByN {
+
+	public static void main(String[] args)
+	{
+		int arr[]= {1,2,3,4,5};		
+		int n=3;
+		System.out.println("Initially Array Looks Like this : ");
+		for(int each:arr)
+			System.out.print(each+" ");
+		for(int i=1;i<=3;i++)
+		{
+			int temp=arr[0];
+			int j;
+			for(j=0;j<arr.length-1;j++)
+			{
+				arr[j]=arr[j+1];
+			}
+			arr[j]=temp;
+		}
+		System.out.println();
+		System.out.println("After rotating by n times it looks like this : ");
+		for(int each:arr)
+			System.out.print(each+" ");
+	}
+
+}
+
+OUTPUT:
+Initially Array Looks Like this : 
+1 2 3 4 5 
+After rotating by n times it looks like this : 
+4 5 1 2 3 
