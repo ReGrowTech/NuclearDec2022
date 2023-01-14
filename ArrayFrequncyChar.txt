@@ -1,0 +1,40 @@
+Q> WAP to print only those character of element which has count >=2
+   Input-{'A','B','A','D','C','D','C'}
+   Output-A
+	  D
+	  C
+
+Solution:
+public class FrequncyOfArray 
+{
+	public static void countFreq(char arr[])
+	{
+		char fake='-';
+		int c;
+		for(int i=0;i<arr.length;i++)
+		{
+			c=1;
+			if(arr[i]!=fake)
+			{
+				for(int j=i+1;j<arr.length;j++)
+				{
+					if(arr[i]==arr[j])
+					{
+						c++;
+						arr[j]=fake;
+					}
+				}
+			}
+			if(c>=2)
+				System.out.println(arr[i]);
+		}
+		
+	}
+
+	public static void main(String[] args)
+	{
+		char a[]= {'A','B','A','D','C','D','C'};
+		FrequncyOfArray.countFreq(a);
+	}
+
+}
