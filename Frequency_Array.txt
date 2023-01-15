@@ -1,0 +1,23 @@
+public class Frequency
+{
+public static void main(String args[])
+{
+int a[]={1,2,3,1,2,1};
+for(int i=0; i<a.length; i++)
+{
+int cnt=1;
+if(a[i]!=Interger.MAX_VALUE)
+{
+for(int j=i+1; j<a.length; j++)
+{
+if(a[i]==a[j])
+{
+cnt++;
+a[j]=integer.MAX_VALUE;
+}
+}
+System.out.println(a[i]+"="+cnt);
+}
+}
+}
+}
