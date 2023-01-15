@@ -1,0 +1,37 @@
+Q>WAP to print the element which has count>=2
+Input-{"AA","BB","AA","DD","ZZ","CC","DD","CC","ZZ"}
+Output-  AA
+	 DD
+	 ZZ
+	 CC
+
+
+public class FrequencyInDiffFormString
+{
+	public static int freq(String arr[],String s,int a)
+	{
+		int c=1;
+		for(int j=a+1;j<arr.length;j++)
+		{
+			if(arr[j]==s)
+			{
+				c++;
+			}
+		}
+		return c;		
+	}
+
+	public static void main(String[] args)
+	{
+		String a[]={"AA","BB","AA","DD","ZZ","CC","DD","CC","ZZ"};
+		for(int i=0;i<a.length;i++)
+		{
+			int res=FrequencyInDiffFormString.freq(a,a[i],i);
+			if(res>=2)
+			System.out.println(a[i]);
+		}
+		
+		
+	}
+
+}
