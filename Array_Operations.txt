@@ -1,0 +1,72 @@
+WAP Array Large And Small Element:-
+
+public class ArrayLargeSmall
+{
+public static void main(String args[])
+{
+int a[]={13,23,34,56,96};
+int large=a[0];
+int small=a[0];
+for(int i=1; i<a.length; i++)
+{
+if(a[i]>large)
+{
+large=a[i];
+}
+if(a[i]<small)
+{
+small=a[i];
+}
+}
+System.out.println("Largest number in your array:" +large);
+System.out.println("Smallest number in your array:" +small);
+}
+}
+
+
+WAP to reverse the array:-
+
+public class ReverseArray
+{
+public static void main(String args[])
+{
+int a[]={12,34,23,23,56};
+for(int i=0; i<a.length/2; i++)
+{
+int temp=a[i];
+a[i]=a[a.length-i-1];
+a[a.length-i-1]=temp;
+}
+for(int each: a)
+{
+System.out.println(each);
+}
+}
+}
+
+WAP to Sort the Array into ASC to DSC:-
+
+public class Sorting
+{
+public static void main(String args[])
+{
+int a[]={21,54,12,34,67,99};
+for(int i=0; i<a.length; i++)
+{
+int temp=0;
+for(int j=i+1; j<a.length; j++)
+{
+if(a[i]>a[j])//if(a[i]<a[j])for DSC to ASC
+{
+temp=a[i];
+a[i]=a[j];
+a[j]=temp;
+}
+}
+}
+for (int each:a)
+{
+System.out.println(each);
+}
+}
+}
