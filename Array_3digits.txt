@@ -1,0 +1,14 @@
+public class   Array_3digits
+{
+public static void main(String[]args)
+{
+    int a[]={153,55,62,455,111);
+  for(int each:a)
+   {
+     if(each>99&&each<1000)
+       {
+         System.out.println(each);
+         }
+    }
+  }
+}
