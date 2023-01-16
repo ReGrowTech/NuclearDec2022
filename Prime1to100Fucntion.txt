@@ -1,0 +1,25 @@
+public class PrimeNo_1_100
+{
+	public static int prime(int a)
+	{
+		int c=0;
+		for(int i=1;i<=a;i++)
+		{
+			if(a%i==0)
+			c++;
+		}
+		if(c==2)
+		return true;
+		else
+		return false;
+	}
+	public static void main(String args[])
+	{
+		for(int i=1;i<=100;i++)
+		{
+			boolean res=prime(i);
+			if(res==true)
+			System.out.println(i);
+		}
+	}
+} 
