@@ -1,0 +1,14 @@
+public class String
+{
+public static void main(String args[])
+{
+String a[]={"pop","lol","tom","sos"};
+for(String each: a)
+{
+if(each.charAt(0)==each.charAt(each.length()-1))
+{
+System.out.println(each);
+}
+}
+}
+}
