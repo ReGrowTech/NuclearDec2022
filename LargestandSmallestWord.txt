@@ -1,0 +1,21 @@
+Q> WAP TO PRINT THE LARGEST AND SMALLEST WORD IN THE STRING
+public class LargestandSmallestWord {
+
+	public static void main(String[] args) {
+		String str="Hardships often prepare ordinary people for an extraordinary destiny";
+		//	String str="Atif Iqubal is studying Manual and Automation Testing";
+		String words[]=str.split(" ");
+		String lowest=words[0];
+		String largest=words[0];
+		for(int i=1;i<words.length;i++)
+		{
+			if(lowest.length()>words[i].length())
+				lowest=words[i];
+			if(largest.length()<words[i].length())
+				largest=words[i];
+		}
+		System.out.println("smallest : "+lowest);
+		System.out.println("largest : "+largest);
+	}
+
+}
