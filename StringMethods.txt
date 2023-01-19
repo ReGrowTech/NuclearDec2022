@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class StringMethods {
+	
+	public static void main(String args[])
+	{
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Entyer your Message here: ");
+	String str=sc.nextLine();
+	System.out.println("\n");
+	System.out.println("What character you want to search: ");
+	char ch=sc.nextLine().charAt(0);
+	//Searching Index Value:
+	int n=str.indexOf(ch);
+	if(n>=0)
+	{
+	System.out.println(ch+" is "+n+" Position in Your Message!");
+	}
+	else
+	{
+		System.out.println("Charcter is not present!");
+	}
+	
+	System.out.println("\n");
+	//Print SubString
+	System.out.println("In which Index you want display message: (first Index)");
+	int i=sc.nextInt();
+	String word=str.substring(i,str.length());
+	System.out.println(word);
+	
+	sc.close();
+	}
+}
