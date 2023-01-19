@@ -1,0 +1,29 @@
+Q>Wap to find the frequency of each character of a string excluding space
+
+public class FrequnceOfLetterInString {
+
+	public static void main(String[] args) 
+	{
+		String str="Atiff Iqaubal";
+		char arr[]=str.toCharArray();
+		System.out.println("Frequency of each character : ");
+		for(int i=0;i<arr.length;i++)
+		{
+			int c=1;
+			if(arr[i]!='@'&& arr[i]!=' ')
+			{
+				for(int j=i+1;j<arr.length;j++) 
+				{
+					if(arr[i]==arr[j])		
+					 {
+						c++;
+						arr[j]='@';
+                    			 }
+				}
+				System.out.println(arr[i]+" ------> "+c);
+			}
+		}
+		
+	}
+
+}
