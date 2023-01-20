@@ -1,0 +1,49 @@
+Q>WAP to input a string and a chracter to check whether it is present in it or not.
+  If present then print at which index it is print.
+
+import java.util.Scanner;
+
+public class CharacterFoundAtIndex 
+{
+	public static Object[] charFoundAtIndex(String s,char c)
+	{
+		char arr[]=s.toCharArray();
+		boolean flag=false;
+		int index=-1;
+		Object ob[]=new Object[2];
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]==c)
+			{
+				flag=true;
+				index=i;
+				break;
+			}
+		}
+		ob[0]=flag;
+		ob[1]=index;
+		return ob;
+	}
+	public static void display(Object result[],char ch)
+	{
+		if(result[0].equals(true))
+		{
+			System.out.println("Chracter "+ch+" is present at index "+result[1]);
+		}
+		else
+			System.out.println("character is not present");
+	}
+	
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter a sentence : ");
+		String str=sc.nextLine().trim();
+		System.out.println("Enter a character to check : ");
+		char ch=sc.next().charAt(0);
+		Object res[]=charFoundAtIndex(str,ch);
+		display(res,ch);
+				
+	}
+
+}
