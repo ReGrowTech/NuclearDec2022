@@ -1,0 +1,42 @@
+Q> WAP TO IMPLEMENT ALL THE METHOD OF STRINGS
+
+public class ImplementStringMethods {
+
+	public static void main(String[] args)
+	{
+		String str="  Atif Iqubal studYing  At Regrow Tech  ";
+		int n=98;
+		String valueof=String.valueOf(n);
+		System.out.println(str);
+		System.out.println();
+		System.out.println("trim method use case remove space from start and end of string : "+str.trim()+"\n");
+		System.out.print("Length of string : "+str.length()+"\n");
+		System.out.println();
+		System.out.println("indexOf method use : "+str.indexOf('e'));
+		System.out.println();
+		System.out.println("LastIndexOf method use : "+str.lastIndexOf('e'));
+		System.out.println();
+		System.out.println("valueof convert any data type to string : "+valueof+" See its length : "+valueof.length());
+		System.out.println();
+		System.out.println("substring use case with 1 index print from that to length-1 : "+str.substring(5));
+		System.out.println();
+		System.out.println("substring with two index begin and end : "+str.substring(5,11));
+		System.out.println();
+		System.out.print("To char array converts to array of character type : ");
+		char ch[]=str.toCharArray();
+		System.out.println(ch);
+		System.out.println();
+		System.out.println("replace method use case replace character : "+str.replace(' ','@'));
+		System.out.println();
+		System.out.println("replaceall method use case replaces string : "+str.replaceAll("Atif", "Adil"));
+		System.out.println();
+		System.out.println("split method use case : breaks on the basis of something and stores in array of string type");
+		String arr[]=str.split(" ");
+		for(String each:arr)
+		{
+		System.out.print(each+" ");
+	    }
+		System.out.println();
+		System.out.println("to remove no of white spaces with single space or double space : "+str.replaceAll("\s+"," "));
+	}
+}
