@@ -1,0 +1,15 @@
+WAP to print name first latter and title only.
+
+public class Abc{
+public static void main(String args[]){
+
+String str = "Md Aquib Raza";
+String a[] = str.split(" ");
+String str1= "":
+
+for(int i=0; i<a.length-1; i++)
+{
+  str1= str1+a[i].charAt(0);
+  }
+  str1= str1+a[a.length-1];
+  System.out.println(str1);
