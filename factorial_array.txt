@@ -1,0 +1,22 @@
+public class   Factorial_array
+{
+public static void main(String[]args)
+{
+int a[]={2,4,8,6,5};
+for(int n=0; n<a.length; n++)
+{
+int fact=1;
+for(int i=1;i<=(i+1); i++)
+{
+fact=fact*j;
+}
+a[i]=fact;
+}
+int n=0;
+while(n<a.length)
+{
+    System.out.println(a[n]);
+    n++;
+    }
+  }
+}
