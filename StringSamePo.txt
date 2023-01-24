@@ -1,0 +1,30 @@
+Reverse the string in the same position?
+
+public class Reverse{
+public static void main (String args[]){
+
+String str = "i love coading".trim().replaceAll("//s+"," ");
+String a[] = str.split(" ");
+  String srt1="";
+
+for(string each : a)
+{
+ rev="";
+  for(int i=0; i< each.length(); i++)
+      {
+	    char ch= str.charAt(i);
+		
+		 rev= ch+rev ;
+		 
+	   }
+	    
+	 str1 = str1+rev;
+	   
+	   }
+	   
+	   System.out.println(str1);
+	   
+	   }
+	   
+	   }
+	   
