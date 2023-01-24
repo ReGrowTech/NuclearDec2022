@@ -1,0 +1,34 @@
+Q>WAP to reverse the string by preserving the space position.
+I/P- Welcome to CloudTech
+O/P- hceTduo lC otemocleW
+
+public class ReverseStringPreservingPosition {
+
+	public static void main(String[] args) {
+		String str="Welcome to CloudTech";
+		char arr[]=str.toCharArray();
+		char result[]=new char[arr.length];
+		System.out.println(str);
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]==' ')
+			{
+				result[i]=arr[i];
+			}
+		}
+		int j=result.length-1;
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]!=' ')
+			{
+				if(result[j]==' ') {
+					j--;
+				}
+				result[j]=arr[i];
+				j--;
+			}
+		}
+		System.out.println(String.valueOf(result));
+	}
+
+}
