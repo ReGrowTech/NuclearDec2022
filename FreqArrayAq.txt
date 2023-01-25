@@ -1,0 +1,27 @@
+  frequency of array?
+  
+  public class Frequency{
+  public static void main(string args[]{
+  
+   int a[] = {32,54,22,32,54,45,45};
+   
+   for(int i=0; i< a.length; i++)
+   {
+     int cnt=0;
+	 if(a[i] != Interger.maxvalue)
+	 {
+	  for(int j= 1+i; j<a.length; j++)
+	  {
+	   if(a[i] == a[j])
+	   {
+	     cnt++;
+		 
+		 a[j]= Interger.maxvalue;
+		 
+	    }
+		
+		}
+		System.out.println(a[i]+"---->"+cnt);
+		
+		}
+		}
