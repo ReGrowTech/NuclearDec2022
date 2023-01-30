@@ -1,0 +1,17 @@
+public class Swapping
+{
+public static void main(String args[])
+{
+String s="Adil";
+String s1="Afridi";
+
+
+s=s+s1;
+s1=s.substring(0,s.length()-s1.length());
+s=s.substring(s1.length(),s.length());
+
+System.out.println("After Swapping:");
+System.out.println(s);
+System.out.println(s1);
+}
+}
