@@ -1,0 +1,30 @@
+public class String
+{
+public static void main(String[]args)
+{
+   String str="KaIf 5435";
+   String num ="";
+  for(int i=0; i<str.length();i++)
+   {
+  char ch=str.charAt(i);
+   if(Character.isDigit (ch)) 
+	{
+	 num=num+ch;
+	}
+ }
+	System.out.println("number :"+num);
+			
+	int n=Integer.parseInt(num);
+		int sum=0;
+		while(n>0) 
+		{
+             int ld=n%10;
+		 n=n/10;
+		sum=sum+ld;
+		}
+		System.out.println("add "+sum);
+		
+		}
+	}
+
+
