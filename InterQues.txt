@@ -1,0 +1,48 @@
+* concat  the strings;
+
+ ( 1) String name = "Aquib";
+        name.concat("khan");
+	Sysytem.out.println(name);
+	
+	
+Ans-
+
+     String name = "Aquib";
+	 String name1 = name.concat("khan");
+	 
+	 System.out.println(name1);
+	 
+	 
+	 
+	 
+	(2) int i =0;
+	      
+		   while(i < 10)
+		     {
+			    if(i == 4)
+				 {
+				   i++;
+				    
+				 countinue;
+				 
+				 }
+				 
+				System.out.print(i);
+				i++;
+				   
+	          }
+
+      Ans-   0 1 2 3 5 6 7 8 9
+       			
+				
+	(3)	 char x = 'A';
+          Sysytem.out.println(x);
+      Ans- A		  
+	  
+	
+	(4) String str = "123456";
+         convert  the String into integer;
+		 
+      Ans- int num = Integer.parseInt(str);
+
+	
