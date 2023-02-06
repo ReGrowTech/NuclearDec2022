@@ -1,0 +1,37 @@
+
+public class poli{
+public static void main(String args[]){
+   
+     int n = 143;
+     int n1 = n;
+	 int n2 = n;
+     int cnt=0;
+     int sum =0;
+   
+   while(n > 0)
+   {
+     n = n/10;
+	 cnt++;
+	 
+	 while(n1 > 0)
+	 {
+	   int ld = n1 % 10;
+	   
+	    n1 = n1/10;
+		
+		
+	  int ldpow = int Mathpow(ld,cnt);
+	  
+	  sum = sum + ldpow;
+	  }
+	  }
+	  
+	  if (sum == n2 )
+	   {
+	     System.out.println("it is polindrom number");
+		}
+		
+		else
+		{
+		  System.out.println("it is not a polindrom number");
+		  }
