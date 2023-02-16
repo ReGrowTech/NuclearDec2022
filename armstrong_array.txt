@@ -1,0 +1,39 @@
+public class Armstrong
+{
+public static void main(String args[]
+{
+int a[]= {153,1,29,370};
+		for(int i=0; i<a.length;i++) 
+		{
+			int sum=0;
+			int count=0;
+			int i1=a[i];
+			int i2=a[i];
+			
+			while (i1>0)
+			{
+				i1=i1/10;
+				count++;
+			}
+				while (i2>0) 
+				{
+					int ld=i2%10;
+					i2=i2/10;
+					
+					int pow=(int)Math.pow(ld,count);
+					sum=sum+pow;
+				}
+				if(a[i]==sum) 
+				{
+					System.out.println("armstrong:"+ a[i]);
+				}
+				else 
+				{
+					System.out.println("not:" +a[i]);
+				}
+				}
+			
+			
+		}
+	}
+
