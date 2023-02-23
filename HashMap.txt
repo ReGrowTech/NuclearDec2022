@@ -1,0 +1,30 @@
+public class UpdateMarks 
+{
+	public static void main(String[] args) 
+	{
+		HashMap<String,Integer> hm=new HashMap<String,Integer>();
+		Scanner sc= new Scanner(System.in);
+		for(int i=1;i<=10;i++)
+		{
+		System.out.println("Enter a name and marks..");
+		hm.put(sc.next(), sc.nextInt());
+		}
+		
+		for(String key:hm.keySet())
+		{
+		System.out.println(key+" -----------------> "+ hm.get(key));
+		}
+		
+		for(String key:hm.keySet())
+		{
+			int new_marks=hm.get(key)+2;
+			hm.put(key, new_marks);
+		}
+		
+		System.out.println("Printing updated marks: ");
+		for(String key:hm.keySet())
+		{
+		System.out.println(key+" -----------------> "+ hm.get(key));
+		}	
+	}
+}
