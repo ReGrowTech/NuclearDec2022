@@ -1,0 +1,41 @@
+package TestCases;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Anamgram {
+
+	public static void main(String[] args) {
+		String str="RACE";
+		String str1="CARE";
+		if(str.length()==str1.length())
+		{
+			char ch[]=str.toCharArray();
+			char ch1[]=str1.toCharArray();
+			ArrayList<Character> al=new ArrayList();
+			for(char each:ch)
+			{
+				al.add(each);
+			}
+			ArrayList<Character> al1=new ArrayList();
+			for(char each:ch1)
+			{
+				al1.add(each);
+			}
+			Collections.sort(al);
+			Collections.sort(al1);
+			if(al1.containsAll(al))
+			{
+				System.out.println("Anagram");
+			}
+			else
+			{
+				System.out.println("Not Anagram");
+			}
+		}
+		else
+		{
+			System.out.println("Not Anagram");
+		}
+	}
+}
