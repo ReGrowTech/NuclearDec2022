@@ -1,0 +1,14 @@
+public class ArrayReverse
+{
+public static void main(String args[])
+{
+	int arr[]={10,20,50,90,15,2};
+		ArrayList<Integer> al=new ArrayList();
+		for(int each: arr)
+		{
+			al.add(each);
+		}
+		Collections.sort(al,Collections.reverseOrder());
+		System.out.println(al);
+}
+}
