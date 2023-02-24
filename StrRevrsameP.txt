@@ -1,0 +1,28 @@
+
+ Reverse the String in same palce ?
+ 
+ String str = "I Love India".replaceAll("\\s+","");
+   
+  String a[] = str.split(" ");  
+           
+      str1 = "";
+		 
+    for(String each: a)
+	{
+	       rev = "";
+		   
+	   for(int i=0; i <each.length(); i++)
+	   { 
+	     char ch = each.charAt(i);
+
+          rev = ch +rev;		 
+	     }
+		 str1 = rev+str1;
+		 
+       }
+
+      System.out.println(str1);   
+		 
+    
+ 
+ 
